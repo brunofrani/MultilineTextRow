@@ -11,5 +11,6 @@ TextRow configuration:
     }
 ```
 
-Problem:
+Layout problem:
 
+![image](pic.png)

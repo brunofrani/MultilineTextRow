@@ -20,9 +20,6 @@ class ViewController: FormViewController {
       $0.title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
       $0.cell.textLabel?.numberOfLines = 0
     }
-    .cellUpdate { (cell, row) in
-      
-    }
     section.append(textRow)
     form.append(section)
   }
