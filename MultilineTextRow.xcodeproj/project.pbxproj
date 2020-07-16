@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		57C7C3C224C096DC00F67D06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C7C3C024C096DC00F67D06 /* Main.storyboard */; };
 		57C7C3C424C096E200F67D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C7C3C324C096E200F67D06 /* Assets.xcassets */; };
 		57C7C3C724C096E200F67D06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C7C3C524C096E200F67D06 /* LaunchScreen.storyboard */; };
+		57C7C3D024C09BA200F67D06 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 57C7C3CF24C09BA200F67D06 /* Eureka */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C7C3D024C09BA200F67D06 /* Eureka in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = MultilineTextRow;
+			packageProductDependencies = (
+				57C7C3CF24C09BA200F67D06 /* Eureka */,
+			);
 			productName = MultilineTextRow;
 			productReference = 57C7C3B724C096DC00F67D06 /* MultilineTextRow.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 57C7C3AE24C096DC00F67D06;
+			packageReferences = (
+				57C7C3CE24C09BA200F67D06 /* XCRemoteSwiftPackageReference "Eureka" */,
+			);
 			productRefGroup = 57C7C3B824C096DC00F67D06 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57C7C3CE24C09BA200F67D06 /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57C7C3CF24C09BA200F67D06 /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57C7C3CE24C09BA200F67D06 /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57C7C3AF24C096DC00F67D06 /* Project object */;
 }

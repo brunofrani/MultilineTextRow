@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import Eureka
 
-class ViewController: UIViewController {
+class ViewController: FormViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    
+    let section = Section()
+    let textRow = TextRow() {
+      $0.tag = "TextRow"
+      $0.cellStyle = .subtitle
+      $0.add(rule: RuleRequired())
+      $0.title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
+      $0.cell.textLabel?.numberOfLines = 0
+    }.cellUpdate { (cell, row) in
+      
+    }
+    
+    section.append(textRow)
+    form.append(section)
   }
 
 
